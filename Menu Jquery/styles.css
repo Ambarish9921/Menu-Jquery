@@ -1,0 +1,322 @@
+#mainmenu {
+  background: #4cb6ea;
+  margin: 0;
+  width: auto;
+  padding: 0;
+  line-height:1;
+  display: block;
+  position: relative;
+  font-family: 'PT Sans', sans-serif;
+}
+#mainmenu ul {
+        background-color: #e400ff;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+#mainmenu ul:after,
+#mainmenu:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#mainmenu ul li {
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: relative;
+        
+       
+}
+
+#mainmenu ul li:hover {
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: relative;
+   background-color: #8a16b9;
+    
+}
+#mainmenu ul li a {
+  text-decoration: none;
+  display: block;
+  margin: 0;
+ 
+  transition: color .2s ease;
+  
+  box-sizing: border-box;
+}
+#mainmenu ul li ul {
+  
+  position: absolute;
+  left: -9999px;
+  top: auto;
+}
+#mainmenu.align-right ul li ul li.has-sub:after {
+  right: auto;
+  left: 15px;
+}
+
+
+#mainmenu ul li ul li a {
+  font-size: 14px;
+  font-weight: 400; 
+  color: #000000;
+  display: block;
+  width: 170px;
+  padding: 11px 10px 11px 20px;
+}
+#mainmenu ul li ul li:hover > a,
+#mainmenu ul li ul li.active > a {
+  color: #4cb6ea;
+}
+#mainmenu ul li ul li:hover:after,
+#mainmenu ul li ul li.active:after {
+  background: #4cb6ea;
+}
+#mainmenu ul li ul li:hover > ul {
+  left: 100%;
+  top: 0;
+}
+#mainmenu ul li ul li:hover > ul > li {
+  max-height: 72px;
+  position: relative;
+}
+#mainmenu > ul > li {
+  float: left;
+}
+#mainmenu.align-center > ul > li {
+  float: none;
+  display: inline-block;
+}
+#mainmenu.align-center > ul {
+  text-align: center;
+}
+#mainmenu.align-center ul ul {
+  text-align: left;
+}
+#mainmenu.align-right > ul {
+  float: right;
+}
+#mainmenu.align-right > ul > li:hover > ul {
+  left: auto;
+  right: 0;
+}
+#mainmenu.align-right ul ul li:hover > ul {
+  right: 100%;
+  left: auto;
+}
+#mainmenu.align-right ul ul li a {
+  text-align: right;
+}
+#mainmenu > ul > li:after {
+ 
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 0;
+  z-index: 0;
+  background: #ffffff;
+ 
+  transition: height .2s;
+}
+#mainmenu > ul > li.has-sub > a {
+  padding-right: 40px;
+}
+#mainmenu > ul > li.has-sub > a:after {
+  display: block;
+  background: #ffffff;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  border-radius: 13px;
+  right: 14px;
+  top: 16px;
+}
+#mainmenu > ul > li.has-sub > a:before {
+  display: block;
+  border: 4px solid transparent;
+  border-top-color: #4cb6ea;
+  z-index: 2;
+  height: 0;
+  width: 0;
+  position: absolute;
+  right: 16px;
+  top: 21px;
+}
+#mainmenu > ul > li > a {
+  color: #ffffff;
+  padding: 15px 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 14px;
+  z-index: 2;
+  position: relative;
+}
+#mainmenu > ul > li:hover:after
+ {
+  height: 100%;
+}
+#mainmenu > ul > li:hover > a
+ {
+  color: #000000;
+}
+#mainmenu > ul > li:hover > a:after
+ {
+  background: #000000;
+}
+#mainmenu > ul > li:hover > a:before {
+  border-top-color: #ffffff;
+}
+#mainmenu > ul > li:hover > ul {
+  left: 0;
+}
+#mainmenu > ul > li:hover > ul > li {
+  max-height: 72px;
+  position: relative;
+}
+#mainmenu #menu-button {
+  display: none;
+}
+#mainmenu > ul > li > a {
+  display: block;
+}
+#mainmenu > ul > li {
+  width: auto;
+}
+#mainmenu > ul > li > ul {
+  width: 170px;
+  display: block;
+}
+#mainmenu > ul > li > ul > li {
+  width: 170px;
+  display: block;
+}
+@media all and (max-width: 800px) {
+  #mainmenu > ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease-out;
+        
+  }
+  #mainmenu > ul > li > ul {
+    width: 100%;
+    display: block;
+  }
+  #mainmenu.align-right ul li a {
+    text-align: left;
+  }
+  #mainmenu > ul > li > ul > li {
+    width: 100%;
+    display: block;
+  }
+  #mainmenu.align-right ul ul li a {
+    text-align: left;
+  }
+  #mainmenu > ul > li > ul > li > a {
+    width: 100%;
+    display: block;
+  }
+  #mainmenu ul li ul li a {
+    width: 100%;
+  }
+  #mainmenu.align-center > ul {
+    text-align: left;
+  }
+  #mainmenu.align-center > ul > li {
+    display: block;
+  }
+  #mainmenu > ul.open {
+    max-height: 1000px;
+    border-top: 1px solid rgba(110, 110, 110, 0.25);
+  }
+  #mainmenu ul {
+    width: 100%;
+  }
+  #mainmenu ul > li {
+    float: none;
+    width: 100%;
+  }
+  #mainmenu ul li a {
+   
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 20px;
+  }
+  #mainmenu ul > li:after {
+    display: none;
+  }
+  #mainmenu ul li.has-sub > a:after,
+  #mainmenu ul li.has-sub > a:before,
+  #mainmenu ul li ul li.has-sub:after,
+  #mainmenu ul li ul li.has-sub:before {
+    display: none;
+  }
+  #mainmenu ul li ul,
+  #mainmenu ul li ul li ul,
+  #mainmenu ul li ul li:hover > ul,
+  #mainmenu.align-right ul li ul,
+  #mainmenu.align-right ul li ul li ul,
+  #mainmenu.align-right ul li ul li:hover > ul {
+    left: 0;
+    position: relative;
+    right: auto;
+  }
+  #mainmenu ul li ul li,
+  #mainmenu ul li:hover > ul > li {
+    max-height: 999px;
+    position: relative;
+    background: none;
+  }
+  #mainmenu ul li ul li a {
+    padding: 8px 20px 8px 35px;
+    color: #ffffff;
+  }
+  #mainmenu ul li ul ul li a {
+    padding: 8px 20px 8px 50px;
+  }
+  #mainmenu ul li ul li:hover > a {
+    color: #000000;
+  }
+  #mainmenu #menu-button {
+    display: block;
+        background-color: rebeccapurple;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  #mainmenu #menu-button:after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    right: 20px;
+    top: 16px;
+  }
+  #mainmenu #menu-button:before {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    border-top: 2px solid #ffffff;
+    right: 20px;
+    top: 26px;
+  }
+}
